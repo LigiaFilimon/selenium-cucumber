@@ -43,7 +43,7 @@ public class TestBase {
     }
 
     protected <T> T initElements(Class<T> pageObjectClass) {
-        waitForPageToLoad(10000);
+       waitForPageToLoad(10000);
 
         return PageFactory.initElements(driver, pageObjectClass);
     }

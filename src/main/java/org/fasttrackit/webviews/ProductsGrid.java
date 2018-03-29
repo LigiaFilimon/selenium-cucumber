@@ -10,7 +10,20 @@ public class ProductsGrid {
     @FindBy(css = ".product-name a")
     private List<WebElement> productNames;
 
+    public WebElement getSortByPrice() {
+        return sortByPrice;
+    }
+
+    @FindBy(css = "select[title ='Sort By']")
+private WebElement sortByPrice;
     public List<WebElement> getProductNames() {
         return productNames;
     }
+
+    public WebElement getSetDescendingDirection() {
+        return setDescendingDirection;
+    }
+
+    @FindBy(css = "a[title ='Set Descending Direction']")
+    private WebElement setDescendingDirection;
 }
